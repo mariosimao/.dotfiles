@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROMPT='[bootstrap]'
-# source .exports
+export ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 
 # TODO : Delete symlinks to deleted files
