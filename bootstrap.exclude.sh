@@ -14,6 +14,7 @@ link () {
 	# TODO - regex here?
 	if [ "$resp" = 'y' -o "$resp" = 'Y' ] ; then
 		for file in $( ls -A | grep -vE '\.exclude*|\.git$|\.gitignore|.*.md' ) ; do
+			rm -f "$HOME/$file"
 			ln -sv "$PWD/$file" "$HOME"
 		done
 		# TODO: source files here?
